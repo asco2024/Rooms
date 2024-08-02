@@ -24,11 +24,10 @@ def move(direction):
 
     finally:
          st.write(f"your current room is {st.session_state.current_room}")
-
-
         
 
 direction = st.text_input("Enter a direction north,south,east, or west")
+direction = (st.text_input).lower()
 if st.button("Move"):
     move(direction)
 
